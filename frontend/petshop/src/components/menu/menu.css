@@ -1,0 +1,82 @@
+#menu {
+  background-color: rgb(28, 28, 28);
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-div {
+  min-height: 80vh;
+  max-width: 90vw;
+  background-color: rgb(213, 213, 213);
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+
+#menu-header {
+  display: flex;
+  justify-content: end;
+  padding: 0.5rem 1rem 0 0;
+}
+
+.filled-shape {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgb(28, 28, 28);
+  transition: 0.3s;
+  margin-left: 10px;
+}
+
+.filled-shape.active {
+  background-color: aqua;
+  width: 40px;
+  border-radius: 15px
+}
+
+#menu-row {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  padding: 1rem 2rem;
+}
+
+#menu-row > #content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+#menu-row > #content > #message {
+  max-width: 70ch;
+}
+
+#menu-row > #image {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-row > #image > img {
+  height: 60vh;
+  animation: fade-in linear 0.5s forwards; 
+  animation-timeline: wheel();
+  cursor: pointer;
+}
+
+@keyframes fade-in {
+  to {opacity: 1}
+}
+
+@media (min-width: 768px) {
+  #menu-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #menu-div {
+    margin: 0;
+  }
+}

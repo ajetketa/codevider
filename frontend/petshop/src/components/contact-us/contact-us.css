@@ -1,0 +1,42 @@
+#contact-us {
+  background-color: rgb(28, 28, 28);
+  padding: 1rem 6rem 1rem 6rem;
+}
+
+#contact-us-div > #header {
+  margin-bottom: 1rem;
+  color: #00ffff;
+  display: flex;
+  justify-content: center;
+}
+
+#contact-options {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(36ch, 1fr));
+}
+
+.contact-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-option > .contact-icon {
+  width: 30px;
+  height: 30px;
+  filter: invert(79%) sepia(100%) saturate(6499%) hue-rotate(105deg) brightness(108%) contrast(104%);
+  margin-bottom: 10px;
+}
+
+.contact-option > .contact-text {
+  color: rgb(213, 213, 213);
+  text-align: center;
+}
+
+.contact-option > .contact-text > a {
+  text-decoration: none;
+  color: aqua;
+  cursor: pointer;
+}

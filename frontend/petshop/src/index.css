@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width:100vw;
+  text-decoration: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+:root {
+  scrollbar-width: none;
+}
+
+p, h1, h2, h3, h4, ul {
+  margin: 0;
+  padding: 0;
+}

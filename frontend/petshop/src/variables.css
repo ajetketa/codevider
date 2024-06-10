@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'My-Ubuntu';
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap') format('woff2');
+}
+
+:root {
+  --font-family: 'My-Ubuntu';
+}

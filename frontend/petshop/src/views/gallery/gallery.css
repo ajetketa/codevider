@@ -1,0 +1,47 @@
+#gallery-filters {
+  margin:1rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#gallery-cards {
+  background-color: rgb(28, 28, 28);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+#gallery-card-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  justify-self: center;
+  gap: 1rem;
+}
+
+#gallery-no-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gallery-no-results > img {
+  width: 60%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 800px) {
+  #gallery-filters {
+    margin: 1rem 5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #gallery-filters {
+    margin: 1rem 15rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  #gallery-filters {
+    margin: 1rem 25rem;
+  }
+}

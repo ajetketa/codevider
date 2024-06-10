@@ -1,0 +1,35 @@
+#about-us {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+#about-us-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#about-us-div > #header {
+  margin-bottom: 1rem;
+  color: rgb(28, 28, 28);
+}
+
+#about-us-div > #content {
+  max-width: 80%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(50ch, 1fr));
+}
+
+#about-us-div > #content > .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-us-div > #content > .column > .image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
